@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  lifecounter_swiftui
+//  lifecounter
 //
 //  Created by stlp on 4/22/21.
 //

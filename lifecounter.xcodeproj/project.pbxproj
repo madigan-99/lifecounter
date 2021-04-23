@@ -7,62 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBA058492631F40000F11F86 /* lifecounter_swiftuiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA058482631F40000F11F86 /* lifecounter_swiftuiApp.swift */; };
-		DBA0584B2631F40000F11F86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0584A2631F40000F11F86 /* ContentView.swift */; };
-		DBA0584D2631F40300F11F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA0584C2631F40300F11F86 /* Assets.xcassets */; };
-		DBA058502631F40300F11F86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA0584F2631F40300F11F86 /* Preview Assets.xcassets */; };
-		DBA0585B2631F40400F11F86 /* lifecounter_swiftuiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA0585A2631F40400F11F86 /* lifecounter_swiftuiTests.swift */; };
-		DBA058662631F40400F11F86 /* lifecounter_swiftuiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA058652631F40400F11F86 /* lifecounter_swiftuiUITests.swift */; };
+		DB869AAD263286EF0047C7BE /* lifecounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB869AAC263286EF0047C7BE /* lifecounterApp.swift */; };
+		DB869AAF263286EF0047C7BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB869AAE263286EF0047C7BE /* ContentView.swift */; };
+		DB869AB1263286F20047C7BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB869AB0263286F20047C7BE /* Assets.xcassets */; };
+		DB869AB4263286F20047C7BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB869AB3263286F20047C7BE /* Preview Assets.xcassets */; };
+		DB869ABF263286F30047C7BE /* lifecounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB869ABE263286F30047C7BE /* lifecounterTests.swift */; };
+		DB869ACA263286F30047C7BE /* lifecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB869AC9263286F30047C7BE /* lifecounterUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DBA058572631F40400F11F86 /* PBXContainerItemProxy */ = {
+		DB869ABB263286F30047C7BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DBA0583D2631F40000F11F86 /* Project object */;
+			containerPortal = DB869AA1263286EE0047C7BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DBA058442631F40000F11F86;
-			remoteInfo = lifecounter_swiftui;
+			remoteGlobalIDString = DB869AA8263286EE0047C7BE;
+			remoteInfo = lifecounter;
 		};
-		DBA058622631F40400F11F86 /* PBXContainerItemProxy */ = {
+		DB869AC6263286F30047C7BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DBA0583D2631F40000F11F86 /* Project object */;
+			containerPortal = DB869AA1263286EE0047C7BE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DBA058442631F40000F11F86;
-			remoteInfo = lifecounter_swiftui;
+			remoteGlobalIDString = DB869AA8263286EE0047C7BE;
+			remoteInfo = lifecounter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DBA058452631F40000F11F86 /* lifecounter_swiftui.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifecounter_swiftui.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBA058482631F40000F11F86 /* lifecounter_swiftuiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounter_swiftuiApp.swift; sourceTree = "<group>"; };
-		DBA0584A2631F40000F11F86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DBA0584C2631F40300F11F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DBA0584F2631F40300F11F86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DBA058512631F40300F11F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBA058562631F40400F11F86 /* lifecounter_swiftuiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounter_swiftuiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBA0585A2631F40400F11F86 /* lifecounter_swiftuiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounter_swiftuiTests.swift; sourceTree = "<group>"; };
-		DBA0585C2631F40400F11F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBA058612631F40400F11F86 /* lifecounter_swiftuiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounter_swiftuiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBA058652631F40400F11F86 /* lifecounter_swiftuiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounter_swiftuiUITests.swift; sourceTree = "<group>"; };
-		DBA058672631F40400F11F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB869AA9263286EE0047C7BE /* lifecounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifecounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB869AAC263286EF0047C7BE /* lifecounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterApp.swift; sourceTree = "<group>"; };
+		DB869AAE263286EF0047C7BE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DB869AB0263286F20047C7BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB869AB3263286F20047C7BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB869AB5263286F20047C7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB869ABA263286F30047C7BE /* lifecounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB869ABE263286F30047C7BE /* lifecounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterTests.swift; sourceTree = "<group>"; };
+		DB869AC0263286F30047C7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB869AC5263286F30047C7BE /* lifecounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB869AC9263286F30047C7BE /* lifecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITests.swift; sourceTree = "<group>"; };
+		DB869ACB263286F30047C7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DBA058422631F40000F11F86 /* Frameworks */ = {
+		DB869AA6263286EE0047C7BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBA058532631F40400F11F86 /* Frameworks */ = {
+		DB869AB7263286F30047C7BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBA0585E2631F40400F11F86 /* Frameworks */ = {
+		DB869AC2263286F30047C7BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,143 +72,143 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DBA0583C2631F3FF00F11F86 = {
+		DB869AA0263286EE0047C7BE = {
 			isa = PBXGroup;
 			children = (
-				DBA058472631F40000F11F86 /* lifecounter_swiftui */,
-				DBA058592631F40400F11F86 /* lifecounter_swiftuiTests */,
-				DBA058642631F40400F11F86 /* lifecounter_swiftuiUITests */,
-				DBA058462631F40000F11F86 /* Products */,
+				DB869AAB263286EE0047C7BE /* lifecounter */,
+				DB869ABD263286F30047C7BE /* lifecounterTests */,
+				DB869AC8263286F30047C7BE /* lifecounterUITests */,
+				DB869AAA263286EE0047C7BE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DBA058462631F40000F11F86 /* Products */ = {
+		DB869AAA263286EE0047C7BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBA058452631F40000F11F86 /* lifecounter_swiftui.app */,
-				DBA058562631F40400F11F86 /* lifecounter_swiftuiTests.xctest */,
-				DBA058612631F40400F11F86 /* lifecounter_swiftuiUITests.xctest */,
+				DB869AA9263286EE0047C7BE /* lifecounter.app */,
+				DB869ABA263286F30047C7BE /* lifecounterTests.xctest */,
+				DB869AC5263286F30047C7BE /* lifecounterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DBA058472631F40000F11F86 /* lifecounter_swiftui */ = {
+		DB869AAB263286EE0047C7BE /* lifecounter */ = {
 			isa = PBXGroup;
 			children = (
-				DBA058482631F40000F11F86 /* lifecounter_swiftuiApp.swift */,
-				DBA0584A2631F40000F11F86 /* ContentView.swift */,
-				DBA0584C2631F40300F11F86 /* Assets.xcassets */,
-				DBA058512631F40300F11F86 /* Info.plist */,
-				DBA0584E2631F40300F11F86 /* Preview Content */,
+				DB869AAC263286EF0047C7BE /* lifecounterApp.swift */,
+				DB869AAE263286EF0047C7BE /* ContentView.swift */,
+				DB869AB0263286F20047C7BE /* Assets.xcassets */,
+				DB869AB5263286F20047C7BE /* Info.plist */,
+				DB869AB2263286F20047C7BE /* Preview Content */,
 			);
-			path = lifecounter_swiftui;
+			path = lifecounter;
 			sourceTree = "<group>";
 		};
-		DBA0584E2631F40300F11F86 /* Preview Content */ = {
+		DB869AB2263286F20047C7BE /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DBA0584F2631F40300F11F86 /* Preview Assets.xcassets */,
+				DB869AB3263286F20047C7BE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DBA058592631F40400F11F86 /* lifecounter_swiftuiTests */ = {
+		DB869ABD263286F30047C7BE /* lifecounterTests */ = {
 			isa = PBXGroup;
 			children = (
-				DBA0585A2631F40400F11F86 /* lifecounter_swiftuiTests.swift */,
-				DBA0585C2631F40400F11F86 /* Info.plist */,
+				DB869ABE263286F30047C7BE /* lifecounterTests.swift */,
+				DB869AC0263286F30047C7BE /* Info.plist */,
 			);
-			path = lifecounter_swiftuiTests;
+			path = lifecounterTests;
 			sourceTree = "<group>";
 		};
-		DBA058642631F40400F11F86 /* lifecounter_swiftuiUITests */ = {
+		DB869AC8263286F30047C7BE /* lifecounterUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DBA058652631F40400F11F86 /* lifecounter_swiftuiUITests.swift */,
-				DBA058672631F40400F11F86 /* Info.plist */,
+				DB869AC9263286F30047C7BE /* lifecounterUITests.swift */,
+				DB869ACB263286F30047C7BE /* Info.plist */,
 			);
-			path = lifecounter_swiftuiUITests;
+			path = lifecounterUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBA058442631F40000F11F86 /* lifecounter_swiftui */ = {
+		DB869AA8263286EE0047C7BE /* lifecounter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBA0586A2631F40400F11F86 /* Build configuration list for PBXNativeTarget "lifecounter_swiftui" */;
+			buildConfigurationList = DB869ACE263286F30047C7BE /* Build configuration list for PBXNativeTarget "lifecounter" */;
 			buildPhases = (
-				DBA058412631F40000F11F86 /* Sources */,
-				DBA058422631F40000F11F86 /* Frameworks */,
-				DBA058432631F40000F11F86 /* Resources */,
+				DB869AA5263286EE0047C7BE /* Sources */,
+				DB869AA6263286EE0047C7BE /* Frameworks */,
+				DB869AA7263286EE0047C7BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = lifecounter_swiftui;
-			productName = lifecounter_swiftui;
-			productReference = DBA058452631F40000F11F86 /* lifecounter_swiftui.app */;
+			name = lifecounter;
+			productName = lifecounter;
+			productReference = DB869AA9263286EE0047C7BE /* lifecounter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DBA058552631F40400F11F86 /* lifecounter_swiftuiTests */ = {
+		DB869AB9263286F30047C7BE /* lifecounterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBA0586D2631F40400F11F86 /* Build configuration list for PBXNativeTarget "lifecounter_swiftuiTests" */;
+			buildConfigurationList = DB869AD1263286F30047C7BE /* Build configuration list for PBXNativeTarget "lifecounterTests" */;
 			buildPhases = (
-				DBA058522631F40400F11F86 /* Sources */,
-				DBA058532631F40400F11F86 /* Frameworks */,
-				DBA058542631F40400F11F86 /* Resources */,
+				DB869AB6263286F30047C7BE /* Sources */,
+				DB869AB7263286F30047C7BE /* Frameworks */,
+				DB869AB8263286F30047C7BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DBA058582631F40400F11F86 /* PBXTargetDependency */,
+				DB869ABC263286F30047C7BE /* PBXTargetDependency */,
 			);
-			name = lifecounter_swiftuiTests;
-			productName = lifecounter_swiftuiTests;
-			productReference = DBA058562631F40400F11F86 /* lifecounter_swiftuiTests.xctest */;
+			name = lifecounterTests;
+			productName = lifecounterTests;
+			productReference = DB869ABA263286F30047C7BE /* lifecounterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DBA058602631F40400F11F86 /* lifecounter_swiftuiUITests */ = {
+		DB869AC4263286F30047C7BE /* lifecounterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBA058702631F40400F11F86 /* Build configuration list for PBXNativeTarget "lifecounter_swiftuiUITests" */;
+			buildConfigurationList = DB869AD4263286F30047C7BE /* Build configuration list for PBXNativeTarget "lifecounterUITests" */;
 			buildPhases = (
-				DBA0585D2631F40400F11F86 /* Sources */,
-				DBA0585E2631F40400F11F86 /* Frameworks */,
-				DBA0585F2631F40400F11F86 /* Resources */,
+				DB869AC1263286F30047C7BE /* Sources */,
+				DB869AC2263286F30047C7BE /* Frameworks */,
+				DB869AC3263286F30047C7BE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DBA058632631F40400F11F86 /* PBXTargetDependency */,
+				DB869AC7263286F30047C7BE /* PBXTargetDependency */,
 			);
-			name = lifecounter_swiftuiUITests;
-			productName = lifecounter_swiftuiUITests;
-			productReference = DBA058612631F40400F11F86 /* lifecounter_swiftuiUITests.xctest */;
+			name = lifecounterUITests;
+			productName = lifecounterUITests;
+			productReference = DB869AC5263286F30047C7BE /* lifecounterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DBA0583D2631F40000F11F86 /* Project object */ = {
+		DB869AA1263286EE0047C7BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					DBA058442631F40000F11F86 = {
+					DB869AA8263286EE0047C7BE = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					DBA058552631F40400F11F86 = {
+					DB869AB9263286F30047C7BE = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = DBA058442631F40000F11F86;
+						TestTargetID = DB869AA8263286EE0047C7BE;
 					};
-					DBA058602631F40400F11F86 = {
+					DB869AC4263286F30047C7BE = {
 						CreatedOnToolsVersion = 12.4;
-						TestTargetID = DBA058442631F40000F11F86;
+						TestTargetID = DB869AA8263286EE0047C7BE;
 					};
 				};
 			};
-			buildConfigurationList = DBA058402631F40000F11F86 /* Build configuration list for PBXProject "lifecounter_swiftui" */;
+			buildConfigurationList = DB869AA4263286EE0047C7BE /* Build configuration list for PBXProject "lifecounter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,36 +216,36 @@
 				en,
 				Base,
 			);
-			mainGroup = DBA0583C2631F3FF00F11F86;
-			productRefGroup = DBA058462631F40000F11F86 /* Products */;
+			mainGroup = DB869AA0263286EE0047C7BE;
+			productRefGroup = DB869AAA263286EE0047C7BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBA058442631F40000F11F86 /* lifecounter_swiftui */,
-				DBA058552631F40400F11F86 /* lifecounter_swiftuiTests */,
-				DBA058602631F40400F11F86 /* lifecounter_swiftuiUITests */,
+				DB869AA8263286EE0047C7BE /* lifecounter */,
+				DB869AB9263286F30047C7BE /* lifecounterTests */,
+				DB869AC4263286F30047C7BE /* lifecounterUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DBA058432631F40000F11F86 /* Resources */ = {
+		DB869AA7263286EE0047C7BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA058502631F40300F11F86 /* Preview Assets.xcassets in Resources */,
-				DBA0584D2631F40300F11F86 /* Assets.xcassets in Resources */,
+				DB869AB4263286F20047C7BE /* Preview Assets.xcassets in Resources */,
+				DB869AB1263286F20047C7BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBA058542631F40400F11F86 /* Resources */ = {
+		DB869AB8263286F30047C7BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBA0585F2631F40400F11F86 /* Resources */ = {
+		DB869AC3263286F30047C7BE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,48 +255,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DBA058412631F40000F11F86 /* Sources */ = {
+		DB869AA5263286EE0047C7BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA0584B2631F40000F11F86 /* ContentView.swift in Sources */,
-				DBA058492631F40000F11F86 /* lifecounter_swiftuiApp.swift in Sources */,
+				DB869AAF263286EF0047C7BE /* ContentView.swift in Sources */,
+				DB869AAD263286EF0047C7BE /* lifecounterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBA058522631F40400F11F86 /* Sources */ = {
+		DB869AB6263286F30047C7BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA0585B2631F40400F11F86 /* lifecounter_swiftuiTests.swift in Sources */,
+				DB869ABF263286F30047C7BE /* lifecounterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DBA0585D2631F40400F11F86 /* Sources */ = {
+		DB869AC1263286F30047C7BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA058662631F40400F11F86 /* lifecounter_swiftuiUITests.swift in Sources */,
+				DB869ACA263286F30047C7BE /* lifecounterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DBA058582631F40400F11F86 /* PBXTargetDependency */ = {
+		DB869ABC263286F30047C7BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DBA058442631F40000F11F86 /* lifecounter_swiftui */;
-			targetProxy = DBA058572631F40400F11F86 /* PBXContainerItemProxy */;
+			target = DB869AA8263286EE0047C7BE /* lifecounter */;
+			targetProxy = DB869ABB263286F30047C7BE /* PBXContainerItemProxy */;
 		};
-		DBA058632631F40400F11F86 /* PBXTargetDependency */ = {
+		DB869AC7263286F30047C7BE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DBA058442631F40000F11F86 /* lifecounter_swiftui */;
-			targetProxy = DBA058622631F40400F11F86 /* PBXContainerItemProxy */;
+			target = DB869AA8263286EE0047C7BE /* lifecounter */;
+			targetProxy = DB869AC6263286F30047C7BE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		DBA058682631F40400F11F86 /* Debug */ = {
+		DB869ACC263286F30047C7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -357,7 +357,7 @@
 			};
 			name = Debug;
 		};
-		DBA058692631F40400F11F86 /* Release */ = {
+		DB869ACD263286F30047C7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -412,174 +412,174 @@
 			};
 			name = Release;
 		};
-		DBA0586B2631F40400F11F86 /* Debug */ = {
+		DB869ACF263286F30047C7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"lifecounter_swiftui/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"lifecounter/Preview Content\"";
 				DEVELOPMENT_TEAM = 79Q2B4G9R7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = lifecounter_swiftui/Info.plist;
+				INFOPLIST_FILE = lifecounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.fywm.lifecounter-swiftui";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.fywm.lifecounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DBA0586C2631F40400F11F86 /* Release */ = {
+		DB869AD0263286F30047C7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"lifecounter_swiftui/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"lifecounter/Preview Content\"";
 				DEVELOPMENT_TEAM = 79Q2B4G9R7;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = lifecounter_swiftui/Info.plist;
+				INFOPLIST_FILE = lifecounter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.fywm.lifecounter-swiftui";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.fywm.lifecounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		DBA0586E2631F40400F11F86 /* Debug */ = {
+		DB869AD2263286F30047C7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79Q2B4G9R7;
-				INFOPLIST_FILE = lifecounter_swiftuiTests/Info.plist;
+				INFOPLIST_FILE = lifecounterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.fywm.lifecounter-swiftuiTests";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.fywm.lifecounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lifecounter_swiftui.app/lifecounter_swiftui";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lifecounter.app/lifecounter";
 			};
 			name = Debug;
 		};
-		DBA0586F2631F40400F11F86 /* Release */ = {
+		DB869AD3263286F30047C7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79Q2B4G9R7;
-				INFOPLIST_FILE = lifecounter_swiftuiTests/Info.plist;
+				INFOPLIST_FILE = lifecounterTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.fywm.lifecounter-swiftuiTests";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.fywm.lifecounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lifecounter_swiftui.app/lifecounter_swiftui";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lifecounter.app/lifecounter";
 			};
 			name = Release;
 		};
-		DBA058712631F40400F11F86 /* Debug */ = {
+		DB869AD5263286F30047C7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79Q2B4G9R7;
-				INFOPLIST_FILE = lifecounter_swiftuiUITests/Info.plist;
+				INFOPLIST_FILE = lifecounterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.fywm.lifecounter-swiftuiUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.fywm.lifecounterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = lifecounter_swiftui;
+				TEST_TARGET_NAME = lifecounter;
 			};
 			name = Debug;
 		};
-		DBA058722631F40400F11F86 /* Release */ = {
+		DB869AD6263286F30047C7BE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 79Q2B4G9R7;
-				INFOPLIST_FILE = lifecounter_swiftuiUITests/Info.plist;
+				INFOPLIST_FILE = lifecounterUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.uw.fywm.lifecounter-swiftuiUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.uw.fywm.lifecounterUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = lifecounter_swiftui;
+				TEST_TARGET_NAME = lifecounter;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBA058402631F40000F11F86 /* Build configuration list for PBXProject "lifecounter_swiftui" */ = {
+		DB869AA4263286EE0047C7BE /* Build configuration list for PBXProject "lifecounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBA058682631F40400F11F86 /* Debug */,
-				DBA058692631F40400F11F86 /* Release */,
+				DB869ACC263286F30047C7BE /* Debug */,
+				DB869ACD263286F30047C7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBA0586A2631F40400F11F86 /* Build configuration list for PBXNativeTarget "lifecounter_swiftui" */ = {
+		DB869ACE263286F30047C7BE /* Build configuration list for PBXNativeTarget "lifecounter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBA0586B2631F40400F11F86 /* Debug */,
-				DBA0586C2631F40400F11F86 /* Release */,
+				DB869ACF263286F30047C7BE /* Debug */,
+				DB869AD0263286F30047C7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBA0586D2631F40400F11F86 /* Build configuration list for PBXNativeTarget "lifecounter_swiftuiTests" */ = {
+		DB869AD1263286F30047C7BE /* Build configuration list for PBXNativeTarget "lifecounterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBA0586E2631F40400F11F86 /* Debug */,
-				DBA0586F2631F40400F11F86 /* Release */,
+				DB869AD2263286F30047C7BE /* Debug */,
+				DB869AD3263286F30047C7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBA058702631F40400F11F86 /* Build configuration list for PBXNativeTarget "lifecounter_swiftuiUITests" */ = {
+		DB869AD4263286F30047C7BE /* Build configuration list for PBXNativeTarget "lifecounterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBA058712631F40400F11F86 /* Debug */,
-				DBA058722631F40400F11F86 /* Release */,
+				DB869AD5263286F30047C7BE /* Debug */,
+				DB869AD6263286F30047C7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DBA0583D2631F40000F11F86 /* Project object */;
+	rootObject = DB869AA1263286EE0047C7BE /* Project object */;
 }
