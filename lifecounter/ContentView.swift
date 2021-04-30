@@ -33,56 +33,55 @@ struct ContentView: View {
     @State var totalLost: Int = 0
     
     var body: some View {
-        NavigationView {
-            GeometryReader { metrics in
+        GeometryReader { metrics in
+            NavigationView {
                 VStack {
-                        VStack {
-                            Text("Welcome to the Life Counter").font(.system(size: metrics.size.width / 15)).multilineTextAlignment(.center)
-                            HStack {
-                                Button(action: {
-                                    if (model.players.count <= 8) {
-                                        addPlayer()
-                                    }
-                                }){
-                                    ZStack {
-                                        RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.66, green: 0.66, blue: 0.99)).frame(width: width * 1.25, height: width / 1.5, alignment: .center)
-                                        Text("Add").font(.system(size: 18 * fontSize)).foregroundColor(inProgress ? Color.gray : Color.black)
-                                    }
-                                }.disabled(inProgress)
-                                Button(action: {
-                                    if (model.players.count > 1) {
-                                        removePlayer()
-                                    }
-                                }){
-                                    ZStack {
-                                        RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.66, green: 0.66, blue: 0.99)).frame(width: width * 1.25, height: width / 1.5, alignment: .center)
-                                        Text("Remove").font(.system(size: 18 * fontSize)).foregroundColor(inProgress ? Color.gray : Color.black)
-                                    }
-                                }.disabled(inProgress)
-                                NavigationLink(destination: HistoryView(changes: $historyArr)){
-                                    ZStack {
-                                        RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.66, green: 0.66, blue: 0.99)).frame(width: width * 1.25, height: width / 1.5, alignment: .center)
-                                        Text("History").font(.system(size: 18 * fontSize)).foregroundColor(Color.black)
-                                    }
+                    VStack {
+                        Text("Welcome to the Life Counter").font(.system(size: metrics.size.width / 15)).multilineTextAlignment(.center)
+                        HStack {
+                            Button(action: {
+                                if (model.players.count < 8) {
+                                    addPlayer()
                                 }
-                                Button(action: {
-                                    resetGame()
-                                }){
-                                    ZStack {
-                                        RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.66, green: 0.66, blue: 0.99)).frame(width: width * 1.25, height: width / 1.5, alignment: .center)
-                                        Text("Reset").font(.system(size: 18 * fontSize)).foregroundColor(Color.black)
-                                    }
+                            }){
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.66, green: 0.66, blue: 0.99)).frame(width: width * 1.25, height: width / 1.5, alignment: .center)
+                                    Text("Add").font(.system(size: 18 * fontSize)).foregroundColor(inProgress ? Color.gray : Color.black)
+                                }
+                            }.disabled(inProgress)
+                            Button(action: {
+                                if (model.players.count > 1) {
+                                    removePlayer()
+                                }
+                            }){
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.66, green: 0.66, blue: 0.99)).frame(width: width * 1.25, height: width / 1.5, alignment: .center)
+                                    Text("Remove").font(.system(size: 18 * fontSize)).foregroundColor(inProgress ? Color.gray : Color.black)
+                                }
+                            }.disabled(inProgress)
+                            NavigationLink(destination: HistoryView(changes: $historyArr)){
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.66, green: 0.66, blue: 0.99)).frame(width: width * 1.25, height: width / 1.5, alignment: .center)
+                                    Text("History").font(.system(size: 18 * fontSize)).foregroundColor(Color.black)
                                 }
                             }
-                        }.padding(paddingScale)
-                    ScrollView {
-                        
-                        ZStack (alignment: .top) {
-                        VStack (alignment: .center) {
-                            ForEach(model.players, id:\.self){ playerIndiv in
-                                IndivPlayer(player: playerIndiv, historyArr: $historyArr, loser: $loser, inProgress: $inProgress, playerName: playerIndiv.name, totalLost: $totalLost)
+                            Button(action: {
+                                resetGame()
+                            }){
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.66, green: 0.66, blue: 0.99)).frame(width: width * 1.25, height: width / 1.5, alignment: .center)
+                                    Text("Reset").font(.system(size: 18 * fontSize)).foregroundColor(Color.black)
+                                }
                             }
                         }
+                    }.padding(paddingScale)
+                    ScrollView {
+                        ZStack (alignment: .top) {
+                            VStack (alignment: .center) {
+                                ForEach(model.players, id:\.self){ playerIndiv in
+                                    IndivPlayer(player: playerIndiv, historyArr: $historyArr, loser: $loser, inProgress: $inProgress, playerName: playerIndiv.name, totalLost: $totalLost)
+                                }
+                            }
                             if (totalLost == (model.players.count - 1)) {
                                 ZStack {
                                     Color.white
@@ -100,15 +99,14 @@ struct ContentView: View {
                             }
                         }.padding(paddingScale)
                     }
-                  
+                    
                     HStack {
                         Text(loser).foregroundColor(Color.red).font(.system(size: 30 * fontSize))
-                   
-            }
-                }
-            }.navigationBarHidden(true)
-        }.padding(paddingScale)
-        
+                        
+                    }
+                }.navigationBarHidden(true)
+            }.navigationViewStyle(StackNavigationViewStyle())
+        }
     }
     private func addPlayer(){
         let id = model.players.count + 1
@@ -146,7 +144,7 @@ struct OvalTextFieldStyle: TextFieldStyle {
 
 struct IndivPlayer: View {
     @State var player: Player
-    @State var count: Int = 1
+    @State var count: Int = 20
     @State private var val: Int = 1
     @Binding var historyArr: [String]
     @Binding var loser: String
@@ -158,48 +156,48 @@ struct IndivPlayer: View {
     
     var body: some View {
         ZStack {
-        VStack (alignment: .center, spacing: 20) {
-            HStack {
+            VStack (alignment: .center, spacing: 20) {
+                HStack {
                     Button(action: {
                         self.showPopUp = true
                     }, label: {
                         Text(playerName).font(.system(size: 20 * fontSize)).foregroundColor(.black)
                     })
-                //  TextField(player.name, text: $playerName).font(.system(size: 20 * fontSize))
-                Spacer()
-                Text(String(self.count)).font(.system(size: 20 * fontSize))
-            }.padding(.horizontal)
-            HStack (alignment: .center) {
-                Button(action: {
-                    self.count -= val
-                    inProgress = true
-                    if (self.count <= 0 && playing == true) {
-                        loser += playerName + " LOSES ! \n"
-                        playing = false
-                        historyArr.append(playerName + " lost ")
-                        totalLost += 1
+                    //  TextField(player.name, text: $playerName).font(.system(size: 20 * fontSize))
+                    Spacer()
+                    Text(String(self.count)).font(.system(size: 20 * fontSize))
+                }.padding(.horizontal)
+                HStack (alignment: .center) {
+                    Button(action: {
+                        self.count -= val
+                        inProgress = true
+                        if (self.count <= 0 && playing == true) {
+                            loser += playerName + " LOSES ! \n"
+                            playing = false
+                            historyArr.append(playerName + " lost ")
+                            totalLost += 1
+                        }
+                        historyArr.append(playerName + " lost " + String(val) + " lives")
+                    }){
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.99, green: 0.6, blue: 0.6)).frame(width: width, height: width, alignment: .center)
+                            Text("-").font(.system(size: 25 * fontSize)).foregroundColor(Color.black)
+                        }
                     }
-                    historyArr.append(playerName + " lost " + String(val) + " lives")
-                }){
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.99, green: 0.6, blue: 0.6)).frame(width: width, height: width, alignment: .center)
-                        Text("-").font(.system(size: 25 * fontSize)).foregroundColor(Color.black)
+                    TextField("Value", value: $val, formatter: NumberFormatter())
+                        .textFieldStyle(OvalTextFieldStyle())
+                    Button(action: {
+                        self.count += val
+                        inProgress = true
+                        historyArr.append(playerName + " gained " + String(val) + " lives")
+                    }) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.4, green: 0.8, blue: 0.4)).frame(width: width, height: width, alignment: .center)
+                            Text("+").font(.system(size: 25 * fontSize)).foregroundColor(Color.black)
+                        }
                     }
                 }
-                TextField("Value", value: $val, formatter: NumberFormatter())
-                    .textFieldStyle(OvalTextFieldStyle())
-                Button(action: {
-                    self.count += val
-                    inProgress = true
-                    historyArr.append(playerName + " gained " + String(val) + " lives")
-                }) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 5).fill(Color.init(red: 0.4, green: 0.8, blue: 0.4)).frame(width: width, height: width, alignment: .center)
-                        Text("+").font(.system(size: 25 * fontSize)).foregroundColor(Color.black)
-                    }
-                }
-            }
-        }.padding(paddingScale)
+            }.padding(paddingScale)
             if $showPopUp.wrappedValue {
                 ZStack {
                     Color.white
